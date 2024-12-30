@@ -248,53 +248,6 @@ private fun calculateResults(data: Data): CalculationResults {
     )
 }
 
-//private fun calculateResults(data: Data): CalculationResults {
-//    // діапазони
-//    val lowerBound = 4.75
-//    val upperBound = 5.25
-//
-//    // діапазони
-//    val energyWithoutImbalance1 = 0.20
-//
-//    // Calculate energy W1 (24 МВт·год)
-//    val energy1 = data.powerC * 24 * energyWithoutImbalance1
-//
-//    // Calculate profit П1 (168 тис. грн)
-//    val profit1 = energy1 * data.electricityPrice
-//
-//    // Calculate energy W2 (96 МВт·год)
-//    val energy2 = data.powerC * 24 * (1 - energyWithoutImbalance1)
-//
-//    // Calculate fine Ш1 (672 тис. грн)
-//    val fine1 = energy2 * data.electricityPrice
-//
-//    // Calculate total profit before improvement (-504 тис. грн)
-//    val profitBefore = profit1 - fine1
-//
-//    // After improvement calculations
-//    val energyWithoutImbalance2 = 0.68 // 68% from formula (9.7)
-//
-//    // Calculate energy W3 (81.6 МВт·год)
-//    val energy3 = data.powerC * 24 * energyWithoutImbalance2
-//
-//    // Calculate profit П2 (571.2 тис. грн)
-//    val profit2 = energy3 * data.electricityPrice
-//
-//    // Calculate energy W4 (38.4 МВт·год)
-//    val energy4 = data.powerC * 24 * (1 - energyWithoutImbalance2)
-//
-//    // Calculate fine Ш2 (268.8 тис. грн)
-//    val fine2 = energy4 * data.electricityPrice
-//
-//    // Calculate total profit after improvement (302.4 тис. грн)
-//    val profitAfter = profit2 - fine2
-//
-//    return CalculationResults(
-//        profitBefore = profitBefore,
-//        profitAfter = profitAfter,
-//    )
-//}
-
 class MainActivity : ComponentActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
